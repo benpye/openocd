@@ -640,7 +640,6 @@ static int add_trigger(struct target *target, struct trigger *trigger)
 		if (result != ERROR_OK)
 			return result;
 		int type = get_field(tdata1, CSR_TDATA1_TYPE(riscv_xlen(target)));
-
 		result = ERROR_OK;
 		switch (type) {
 			case 1:
